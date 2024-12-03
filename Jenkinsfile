@@ -13,7 +13,7 @@ pipeline {
     stage('Build Stage') {
       steps {
         echo '********* Build Stage Started **********'
-        bat 'pip install -r requirements.txt'
+        bat 'C:/Users/chinn/AppData/Local/Programs/Python/Python312/Scripts/pip.exe install -r requirements.txt'
         bat 'pyinstaller --onefile app.py'
         echo '********* Build Stage Finished **********'
         }
